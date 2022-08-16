@@ -11,6 +11,122 @@ import image8 from '../../../assets/images/work8.jpg'
 
 import "./Ourportfolio.scss"
 export default function Ourportfolio() {
+    const [tenbien, setTenbien] = useState([
+        {
+            anh: image1,
+            tenteam: 'Project #1',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image2,
+            tenteam: 'Project #2',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image3,
+            tenteam: 'Project #3',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image4,
+            tenteam: 'Project #4',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image5,
+            tenteam: 'Project #5',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image6,
+            tenteam: 'Project #6',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image7,
+            tenteam: 'Project #7',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image8,
+            tenteam: 'Project #8',
+            motateam: 'work-item-info',
+        },
+
+    ])
+    const [tenbien1, setTenbien1] = useState([
+
+        {
+            anh: image3,
+            tenteam: 'Project #3',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image5,
+            tenteam: 'Project #5',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image7,
+            tenteam: 'Project #7',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image8,
+            tenteam: 'Project #8',
+            motateam: 'work-item-info',
+        }
+
+    ])
+    const [tenbien2, setTenbien2] = useState([
+
+        {
+            anh: image2,
+            tenteam: 'Project #2',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image4,
+            tenteam: 'Project #4',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image5,
+            tenteam: 'Project #5',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image6,
+            tenteam: 'Project #6',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image7,
+            tenteam: 'Project #7',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image8,
+            tenteam: 'Project #8',
+            motateam: 'work-item-info',
+        }
+
+    ])
+    const [tenbien3, setTenbien3] = useState([
+
+        {
+            anh: image2,
+            tenteam: 'Project #2',
+            motateam: 'work-item-info',
+        },
+        {
+            anh: image4,
+            tenteam: 'Project #4',
+            motateam: 'work-item-info',
+        },
+      
+
+    ])
     const [tab, settab] = useState('all')
     return (
         <body className="tongourpor">
@@ -25,148 +141,68 @@ export default function Ourportfolio() {
                 <div className={`all-1 ${tab === 'webdevelopment' ? 'tab-active' : ''}`} onClick={() => settab('webdevelopment')}>Web Development</div>
             </div>
             <div>
+
                 {tab === 'all' ? <div className="allimagechitiet">
-                    <div className="bocanhchitietour">
-                        <img src={image1} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #1</div>
-                        <div className="motateam">work-item-info</div>
+                    {tenbien.map((item, key) => {
+                        return (
+                            <div className="bocanhchitietour">
+                                <img src={item.anh} className='anhchitietour' />
+                                <div className="bg-color"></div>
+                                <div className="tenteam">{item.tenteam}</div>
+                                <div className="motateam">{item.motateam}</div>
+                            </div>
+                        )
+                    })}
 
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image2} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #2</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image3} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #3</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image4} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #4</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image5} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #5</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image6} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #6</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image7} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #7</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image8} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #8</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
-                    <div className="bocanhchitietour">
-                        <img src={image1} className='anhchitietour' />
-                        <div className="bg-color"></div>
-                        <div className="tenteam">Project #9</div>
-                        <div className="motateam">work-item-info</div>
-
-                    </div>
                 </div> : ''}
             </div>
             <div>
                 {tab === 'graphic' ? <div className="allimagechitiet">
-                    <div className="bocanhchitietour">
-                        <img src={image3} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #3</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image5} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #5</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image6} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #6</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image7} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #7</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
+                    {
+                        tenbien1.map((item, key) => {
+                            return (
+                                <div className="bocanhchitietour">
+                                    <img src={item.anh} className='anhchitietour' />
+                                    <div className="bg-color"></div>
+                                    <div className="tenteam">{item.tenteam}</div>
+                                    <div className="motateam">{item.motateam}</div>
+                                </div>
+                            )
+                        })
+                    }
+
                 </div> : ''}
             </div>
             <div>
                 {tab === 'webdesign' ? <div className="allimagechitiet">
-                    <div className="bocanhchitietour">
-                        <img src={image1} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #1</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image4} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #4</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image5} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #9</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image6} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #6</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image7} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #9</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
+                    {
+                        tenbien2.map((item, key) => {
+                            return (
+                                <div className="bocanhchitietour">
+                                    <img src={item.anh} className='anhchitietour' />
+                                    <div className="bg-color"></div>
+                                    <div className="tenteam">{item.tenteam}</div>
+                                    <div className="motateam">{item.motateam}</div>
+                                </div>
+                            )
+                        })
+                    }
                 </div> : ''}
             </div>
             <div>
                 {tab === 'webdevelopment' ? <div className="allimagechitiet">
-                    <div className="bocanhchitietour">
-                        <img src={image1} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #1</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
-                    <div className="bocanhchitietour">
-                        <img src={image2} className='anhchitietour' />
-                         <div className="bg-color"></div>
-                        <div className="tenteam">Project #2</div>
-                        <div className="motateam">work-item-info</div>
-                        </div>
+                    {
+                        tenbien3.map((item, key) => {
+                            return (
+                                <div className="bocanhchitietour">
+                                    <img src={item.anh} className='anhchitietour' />
+                                    <div className="bg-color"></div>
+                                    <div className="tenteam">{item.tenteam}</div>
+                                    <div className="motateam">{item.motateam}</div>
+                                </div>
+                            )
+                        })
+                    }
                 </div> : ''}
             </div>
 

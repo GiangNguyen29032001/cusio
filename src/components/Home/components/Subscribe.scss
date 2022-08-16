@@ -1,0 +1,77 @@
+.allsub {
+    margin-top: 50px;
+    // margin-bottom: 50px;
+
+    .allsub1 {
+        text-align: center;
+
+        .subscribe {
+            font-weight: normal;
+            margin-bottom: 100px;
+        }
+
+        .enteryour {
+            font-size: 16px;
+            outline: 0;
+            border: 0;
+            text-align: center;
+        }
+
+        .gachduoienteryour {
+            width: 700px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .nutsub {
+            width: 200px;
+            padding: 15px;
+            text-transform: uppercase;
+
+            font-size: 16px;
+            color: blueviolet;
+            letter-spacing: 5px;
+            border: 3px solid blueviolet;
+
+            &:hover {
+                background-color: blueviolet;
+                color: white;
+                cursor: pointer;
+                transition: 0.6s all;
+            }
+        }
+    }
+
+    .allcontact {
+        text-align: center;
+        margin-top: 100px;
+        padding-top: 100px;
+        background-color: blueviolet;
+        height: 250px;
+
+        .textcontact {
+            font-weight: normal;
+            color: white;
+            letter-spacing: 5px;
+            margin-bottom: 50px;
+        }
+
+        .nutcontact {
+            width: 200px;
+            padding: 15px;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: white;
+            background-color: blueviolet;
+            letter-spacing: 5px;
+            border: 3px solid rgb(255, 255, 255);
+
+            &:hover {
+                background-color: white;
+                color: blueviolet;
+                cursor: pointer;
+                transition: 0.6s all;
+            }
+        }
+    }
+}

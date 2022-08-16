@@ -1,0 +1,46 @@
+.allfooter {
+    margin-top: 50px;
+    width: 100%;
+
+    .allfooter-1 {
+        text-align: center;
+        height: 300px;
+        background-color: black;
+
+        .logofooter {
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        .all-icon {
+            .all-icon1 {
+                display: flex;
+                color: aliceblue;
+                justify-content: center;
+                list-style: none;
+
+                .iconfooter {
+                    font-size: 30px;
+                    margin-right: 40px;
+
+                    &:hover {
+                        color: blueviolet;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .allright {
+        text-align: center;
+        background-color: rgb(60, 35, 83);
+        color: white;
+        height: 50px;
+        font-size: 11px;
+        letter-spacing: 5px;
+        padding-top: 15px;
+
+    }
+}

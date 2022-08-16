@@ -1,0 +1,130 @@
+.tongcontact {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    .contactlon {
+        text-align: center;
+
+        .contact {
+            font-weight: normal;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .gachduoicontact {
+            width: 50px;
+            height: 2px;
+            background-color: blueviolet;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .tonglienhe {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        .lienhe {
+            .address {
+                text-align: center;
+                letter-spacing: 5px;
+                font-weight: normal;
+                font-size: 25px;
+            }
+
+            .diachi {
+                color: rgb(128, 127, 127);
+            }
+        }
+    }
+
+    .tongphananh {
+        margin-top: 100px;
+        max-width: 1200px;
+        margin: 100px auto;
+
+        .chitietphananh {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+
+            .ten {
+                border: 0;
+                outline: 0;
+                width: 550px;
+            }
+            .ten-1 {
+                border: 0;
+                outline: 0;
+                width: 550px;
+            }
+
+            .gachduoiphananh {
+                width: 550px;
+                background-color: rgb(141, 135, 135);
+            }
+
+
+
+            .gachduoiphananh1 {
+                width: 1200px;
+            }
+        }
+
+        .ten1 {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid rgba(30, 30, 30, 0.3);
+            padding: 15px;
+            height: 200px;
+            margin: 100px 0  0;
+            transition: all .5s ease-in-out;
+            outline: 0;
+        }
+    }
+
+    .tongsend {
+        display: flex;
+        justify-content: flex-end;
+        .send {
+            color: #c64cff;
+            border: 2px solid#c64cff;
+            font-size: 20px;
+            width: 150px;
+            padding: 15px;
+            letter-spacing: 5px;
+           
+
+            &:hover {
+                color: white;
+                background-color: #c64cff;
+            }
+        }
+    }
+
+}
+.nhapoemai{
+    color: red;
+}
+.nhaoomess{
+    color: rgb(138, 138, 138);
+    text-align: center;
+    margin-top: 20px;
+}
+.bảng{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 250px;
+    // border: 1px solid rgb(213, 228, 178); 
+    // color: #c64cff;
+}
+.bảng1{
+    border: 1px solid rgb(213, 228, 178); 
+    color: #c64cff;
+    height: 250px;
+    width: 33%;
+    word-wrap: break-word ;
+}

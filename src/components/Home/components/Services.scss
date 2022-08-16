@@ -1,0 +1,58 @@
+.tongpghansevieces {
+    // margin-top: 200px;
+    margin-bottom: 200px;
+
+    .phantext {
+        text-align: center;
+        color: rgb(136, 135, 135);
+        display: block;
+
+        .sevices {
+            font-weight: normal;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+
+        .gachduoisevices {
+            width: 50px;
+            border: 2px solid #c64cff;
+            margin-bottom: 30px;
+        }
+
+        .textlorem {
+            margin-bottom: 50px;
+        }
+    }
+
+    .tongiconlon {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .tongicon {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-bottom: 20px;
+
+        .iconvatext {
+            text-align: center;
+            flex-basis: 25%;
+
+            .iconcanchinh {
+                color: #c64cff;
+                font-size: 36px;
+
+                &:hover {
+                    color: #690791;
+                }
+            }
+
+            .textduoiicon {
+                font-weight: normal;
+                font-size: 30px;
+            }
+        }
+    }
+}

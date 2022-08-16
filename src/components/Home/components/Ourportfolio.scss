@@ -1,0 +1,123 @@
+.tongourpor {
+    padding-top: 200px;
+    background-color: rgb(226, 226, 226);
+
+    .textvagachchan {
+        text-align: center;
+
+        .ourpor {
+            font-weight: normal;
+        }
+
+        .gachchanour {
+            width: 50px;
+            height: 2px;
+            background-color: blueviolet;
+            margin-bottom: 60px;
+        }
+    }
+
+    .chitietourpor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+       
+
+        .all-1 {
+            margin-left: 40px;
+            font-size: 18px;
+
+            &.tab-active {
+                color: blueviolet;
+            }
+
+            &:hover {
+                color: blueviolet;
+                cursor: pointer;
+
+            }
+
+        }
+    }
+
+
+.allimagechitiet {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .bocanhchitietour {
+        width: 25%;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            .bg-color {
+                opacity: 0.9;
+            }
+
+            .anhteam {
+                transform: scale(1.3);
+            }
+
+            .tenteam {
+                top: 40%;
+                opacity: 1;
+            }
+
+            .motateam {
+                top: calc(40% + 60px);
+                opacity: 1;
+            }
+
+            .theicon {
+                opacity: 1;
+            }
+        }
+
+        .bg-color {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ad00ff;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.6s all;
+        }
+
+        .tenteam {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            font-size: 29px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            transition: 0.6s all;
+            opacity: 0;
+        }
+
+        .motateam {
+            position: absolute;
+            top: calc(40% + 40px);
+            left: 0;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 300;
+            transition: 0.6s all;
+            opacity: 0;
+        }
+
+        
+        }
+    }
+
+    .anhchitietour {
+        width: 100%;
+    }
+}

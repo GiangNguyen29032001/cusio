@@ -1,0 +1,31 @@
+.tongtestimon {
+    margin: auto;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .tongtestimon1 {
+        max-width: 900px;
+        margin: auto;
+
+        .slider {
+            p {
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+
+    .textteminol {
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .gachduoitextteminol {
+        width: 100px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-bottom: 30px;
+    }
+}

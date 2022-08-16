@@ -1,0 +1,145 @@
+.tongteam {
+   
+
+    .teamtong {
+        text-align: center;
+
+        .ourteam {
+            font-weight: normal;
+        }
+
+        .gachour {
+            width: 50px;
+            height: 3px;
+            background-color: #8200bf;
+            margin-bottom: 40px;
+        }
+    }
+
+    .tonganhteam {
+        max-width: 1050px;
+        padding-bottom: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .tongimage1team {
+            width: 300px;
+            height: 400px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover {
+                .bg-color {
+                    opacity: 0.9;
+                }
+                .anhteam {
+                    transform: scale(1.3);
+                }
+                .tenteam {
+                    top: 40%;
+                    opacity: 1;
+                }
+                .motateam {
+                    top: calc(40% + 60px);
+                    opacity: 1;
+                }
+                .theicon {
+                    opacity: 1;
+                }
+            }
+
+            .bg-color {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #ad00ff;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: 0.6s all;
+            }
+
+            .tenteam {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                font-size: 29px;
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                transition: 0.6s all;
+                opacity: 0;
+            }
+            .motateam {
+                position: absolute;
+                top: calc(40% + 40px);
+                left: 0;
+                font-size: 20px;
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                font-weight: 300;
+                transition: 0.6s all;
+                opacity: 0;
+            }
+            .theicon {
+                position: absolute;
+                top: calc(50% + 80px);
+                left: 0;
+                font-size: 16px;
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                transition: 0.6s all;
+                opacity: 0;
+
+                .anh-icon {
+                    margin-right: 12px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .anhteam {
+                // width: 100%;
+                // height: 400px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 0;
+                transition-duration: 1s;
+            }
+        }
+    }
+
+    .tongclients {
+        background-color: #8200bf;
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+
+        .tongclients1 {
+            width: 1050px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 120px;
+            .soclients {
+                font-size: 40px;
+                color: white;
+                .clienst {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

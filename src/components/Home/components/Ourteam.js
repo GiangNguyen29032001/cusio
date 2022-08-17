@@ -3,8 +3,35 @@ import image1 from "../../../assets/images/team1.jpg"
 import image2 from "../../../assets/images/team2.jpg"
 import image3 from "../../../assets/images/team3.jpg"
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from "@ant-design/icons"
+import { useState, useEffect} from "react"
 
 export default function Ourteam() {
+    const [tenbien,setTenbien] = useState([
+        {
+            anh:image1,
+            tenteam:'SAMANTA L.',
+            motateam:'Architect'
+        },
+        {
+            anh:image2,
+            tenteam:'SAMANTA L.',
+            motateam:'Architect'
+        },
+        {
+            anh:image3,
+            tenteam:'SAMANTA L.',
+            motateam:'Architect'
+        },
+        
+    ])
+    const [thaydoi,setThaydoi] = useState('')
+    useEffect(() => {
+        setTimeout(() =>
+        {
+            setThaydoi('')
+        },3000)
+    }
+    )
     return (
 
         <body id="TEAM" className="tongteam">
@@ -13,11 +40,13 @@ export default function Ourteam() {
                 <hr className="gachour"></hr>
             </div>
             <div className="tonganhteam">
-                <div className="tongimage1team">
-                    <img src={image1} className="anhteam" />
+            {tenbien.map((item, key) => {
+                        return (
+                <div className="tongimage1team" onClick={() => setThaydoi(item.anh)}>
+                    <img src={item.anh} className="anhteam" />
                     <div className="bg-color"></div>
-                    <div className="tenteam">SAMANTA L.</div>
-                    <div className="motateam">Architect</div>
+                    <div className="tenteam">{ thaydoi === item.anh ?'damua' :item.tenteam}</div>
+                    <div className="motateam">{item.motateam}</div>
                     <div className="theicon">
                         <div className="anh-icon"><FacebookOutlined /></div>
                         <div className="anh-icon"><InstagramOutlined /></div>
@@ -25,31 +54,8 @@ export default function Ourteam() {
                         <div className="anh-icon"><TwitterOutlined /></div>
                     </div>
                 </div>
-                <div className="tongimage1team">
-                    <img src={image2} className="anhteam" />
-                    <div className="bg-color"></div>
-                    <div className="tenteam">PAMELA K.</div>
-                    <div className="motateam">Designer</div>
-                    <div className="theicon">
-                        <div className="anh-icon"><FacebookOutlined /></div>
-                        <div className="anh-icon"><InstagramOutlined /></div>
-                        <div className="anh-icon"><LinkedinOutlined /></div>
-                        <div className="anh-icon"><TwitterOutlined /></div>
-                    </div> 
-                </div>
-                <div className="tongimage1team">
-                    <img src={image3} className="anhteam" />
-                    <div className="bg-color"></div>
-                    <div className="tenteam">MICHEAL J.</div>
-                    <div className="motateam">Planner</div>
-                    <div className="theicon">
-                        <div className="anh-icon"><FacebookOutlined /></div>
-                        <div className="anh-icon"><InstagramOutlined /></div>
-                        <div className="anh-icon"><LinkedinOutlined /></div>
-                        <div className="anh-icon"><TwitterOutlined /></div>
-                    </div>
-                </div>
-
+                          )
+                        })}
             </div>
             <div className="tongclients">
                 <div className="tongclients1">

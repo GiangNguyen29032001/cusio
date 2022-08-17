@@ -187,7 +187,7 @@ export default function Ourportfolio() {
             </div>
 
             <div>
-                {tab === 'graphic' ? <button onClick={() => setTenbien1(databien1)}>load</button> : ''}
+                {/* {tab === 'graphic' ? <button onClick={() => setTenbien1(databien1)}>load</button> : ''} */}
                 {tab === 'graphic' ? <div className="allimagechitiet">
                     {
                         tenbien1.map((item, key) => {
@@ -205,7 +205,7 @@ export default function Ourportfolio() {
                 </div> : ''}
             </div>
             <div>
-                {tab === 'webdesign' ? <button onClick={() => setTenbien2(databien2)}>load</button> : ''}
+                {/* {tab === 'webdesign' ? <button onClick={() => setTenbien2(databien2)}>load</button> : ''} */}
                 {tab === 'webdesign' ? <div className="allimagechitiet">
                     {
                         tenbien2.map((item, key) => {
@@ -222,7 +222,7 @@ export default function Ourportfolio() {
                 </div> : ''}
             </div>
             <div>
-                {tab === 'webdevelopment' ? <button onClick={() => setTenbien3(databien3)}>load</button> : ''}
+                {/* {tab === 'webdevelopment' ? <button onClick={() => setTenbien3(databien3)}>load</button> : ''} */}
 
                 {tab === 'webdevelopment' ? <div className="allimagechitiet">
                     {
